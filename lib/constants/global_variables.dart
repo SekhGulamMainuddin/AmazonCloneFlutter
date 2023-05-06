@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-String uri = "https://amazon-clone-server-wira-3ioqzp7ao-sekhgulammainuddin.vercel.app";
+String uri = "<amazoncloneserverapi.com/hidden>";
 
 class GlobalVariables {
 
