@@ -1,7 +1,7 @@
 import 'package:amazon_clone/constants/loader.dart';
-import 'package:amazon_clone/features/account/widgets/product.dart';
 import 'package:amazon_clone/features/admin/services/product_service.dart';
-import 'package:amazon_clone/features/order_details/screens/order_details.dart';
+import 'package:amazon_clone/features/user/account/widgets/product.dart';
+import 'package:amazon_clone/features/user/order_details/screens/order_details.dart';
 import 'package:amazon_clone/models/order.dart';
 import 'package:flutter/material.dart';
 

@@ -1,8 +1,8 @@
 import 'package:amazon_clone/common/widgets/custom_button.dart';
 import 'package:amazon_clone/common/widgets/rating_bars.dart';
 import 'package:amazon_clone/constants/global_variables.dart';
-import 'package:amazon_clone/features/product_details/services/product_details_service.dart';
-import 'package:amazon_clone/features/search/screens/search_screen.dart';
+import 'package:amazon_clone/features/user/product_details/services/product_details_service.dart';
+import 'package:amazon_clone/features/user/search/screens/search_screen.dart';
 import 'package:amazon_clone/models/product.dart';
 import 'package:amazon_clone/providers/user_provider.dart';
 import 'package:carousel_slider/carousel_slider.dart';

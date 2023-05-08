@@ -1,37 +1,25 @@
 import 'package:amazon_clone/constants/global_variables.dart';
-import 'package:amazon_clone/constants/loader.dart';
-import 'package:amazon_clone/features/home/widgets/address_box.dart';
-import 'package:amazon_clone/features/product_details/screens/product_details_screen.dart';
-import 'package:amazon_clone/features/search/widget/searched_product.dart';
-import 'package:amazon_clone/features/search/services/search_service.dart';
-import 'package:amazon_clone/models/product.dart';
+import 'package:amazon_clone/features/user/home/widgets/address_box.dart';
+import 'package:amazon_clone/features/user/home/widgets/carousel_image.dart';
+import 'package:amazon_clone/features/user/home/widgets/deals_of_the_day.dart';
+import 'package:amazon_clone/features/user/home/widgets/top_category.dart';
+import 'package:amazon_clone/features/user/search/screens/search_screen.dart';
 import 'package:flutter/material.dart';
 
-class SearchScreen extends StatefulWidget {
-  static const String routeName = "/search";
-  final String searchQuery;
+class HomeScreen extends StatefulWidget {
+  static const routeName = "/home";
 
-  const SearchScreen({Key? key, required this.searchQuery}) : super(key: key);
+  const HomeScreen({Key? key}) : super(key: key);
+
 
   @override
-  State<SearchScreen> createState() => _SearchScreenState();
+  State<HomeScreen> createState() => _HomeScreenState();
 }
 
-class _SearchScreenState extends State<SearchScreen> {
-  final SearchService searchService = SearchService();
-  List<Product>? products;
+class _HomeScreenState extends State<HomeScreen> {
 
-  @override
-  void initState() {
-    super.initState();
-    getSearchedProducts(widget.searchQuery);
-  }
-
-  getSearchedProducts(String query) async {
-    products = null;
-    products = await searchService.searchProduct(
-        context: context, searchQuery: query);
-    setState(() {});
+  searchProduct(String searchQuery){
+    Navigator.pushNamed(context, SearchScreen.routeName, arguments: searchQuery);
   }
 
   @override
@@ -49,13 +37,13 @@ class _SearchScreenState extends State<SearchScreen> {
           title: Row(
             children: [
               Expanded(
-                child: Container(
+                child: SizedBox(
                   height: 40,
                   child: Material(
                     borderRadius: BorderRadius.circular(7),
                     elevation: 1,
                     child: TextFormField(
-                      onFieldSubmitted: getSearchedProducts,
+                      onFieldSubmitted: searchProduct,
                       decoration: InputDecoration(
                         hintText: "Search Account.in",
                         hintStyle: const TextStyle(fontSize: 17),
@@ -97,31 +85,18 @@ class _SearchScreenState extends State<SearchScreen> {
           ),
         ),
       ),
-      body: Column(
-        children: [
-          const AddressBox(),
-          products == null
-              ? const Loader()
-              : Expanded(
-                  child: ListView.builder(
-                    itemCount: products!.length,
-                    itemBuilder: (context, index) {
-                      return GestureDetector(
-                        child: SearchedProduct(
-                          product: products![index],
-                        ),
-                        onTap: () {
-                          Navigator.pushNamed(
-                            context,
-                            ProductDetailsScreen.routeName,
-                            arguments: products![index],
-                          );
-                        },
-                      );
-                    },
-                  ),
-                ),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: const [
+            AddressBox(),
+            SizedBox(height: 10,),
+            TopCategory(),
+            SizedBox(height: 10,),
+            CarouselImage(),
+            SizedBox(height: 5,),
+            DealOfTheDay(),
+          ],
+        ),
       ),
     );
   }

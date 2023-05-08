@@ -1,8 +1,8 @@
 import 'package:amazon_clone/constants/loader.dart';
 import 'package:amazon_clone/constants/utils.dart';
-import 'package:amazon_clone/features/account/widgets/product.dart';
 import 'package:amazon_clone/features/admin/screens/add_product_screen.dart';
 import 'package:amazon_clone/features/admin/services/product_service.dart';
+import 'package:amazon_clone/features/user/account/widgets/product.dart';
 import 'package:amazon_clone/models/product.dart';
 import 'package:flutter/material.dart';
 

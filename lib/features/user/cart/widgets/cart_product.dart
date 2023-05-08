@@ -1,5 +1,5 @@
-import 'package:amazon_clone/features/cart/services/cart_service.dart';
-import 'package:amazon_clone/features/product_details/services/product_details_service.dart';
+import 'package:amazon_clone/features/user/cart/services/cart_service.dart';
+import 'package:amazon_clone/features/user/product_details/services/product_details_service.dart';
 import 'package:amazon_clone/models/product.dart';
 import 'package:amazon_clone/providers/user_provider.dart';
 import 'package:flutter/material.dart';
