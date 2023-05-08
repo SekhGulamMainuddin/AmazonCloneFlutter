@@ -53,7 +53,8 @@ Server Repository - [https://github.com/SekhGulamMainuddin/amazon-clone-server ]
 13. [Charts Flutter](https://pub.dev/documentation/charts_flutter/latest/)
   
 # Screenshots
-![Frame 1](https://user-images.githubusercontent.com/73953395/236638447-3b7f509d-3466-4e1f-a6a4-64c579f911e4.png)
+![Screenshots](https://user-images.githubusercontent.com/73953395/236886768-839ec3dc-3f63-4f99-a58c-ec6cfd44e9ac.png)
+
 
 
 
