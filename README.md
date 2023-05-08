@@ -18,6 +18,25 @@ This app contains an Admin Panel and a User Panel. The Backend is build on top o
   
 Server Repository - [https://github.com/SekhGulamMainuddin/amazon-clone-server ](https://github.com/SekhGulamMainuddin/amazon-clone-server)
 
+# Features -
+-> Sign-Up and Sign-In for both Admin and User \
+-> User Side - \
+    &nbsp;  &nbsp; &nbsp;  &nbsp;-> Search Product \
+    &nbsp;  &nbsp; &nbsp;  &nbsp;-> View Product Detail \
+    &nbsp;  &nbsp; &nbsp;  &nbsp;-> Add To Cart or Buy Now \
+    &nbsp;  &nbsp; &nbsp;  &nbsp;-> Place Order \
+    &nbsp;  &nbsp; &nbsp;  &nbsp;-> Order all Products from Cart \
+    &nbsp;  &nbsp; &nbsp;  &nbsp;-> Payment using Google Pay \
+    &nbsp;  &nbsp; &nbsp;  &nbsp;-> View all Orders in Account Screen \
+    &nbsp;  &nbsp; &nbsp;  &nbsp;-> View Delivery Status \
+-> Admin Side \
+    &nbsp;  &nbsp; &nbsp;  &nbsp;-> View all Previosly Listed Products \
+    &nbsp;  &nbsp; &nbsp;  &nbsp;-> Add New Product \
+    &nbsp;  &nbsp; &nbsp;  &nbsp;-> Provide Details about the Product \
+    &nbsp;  &nbsp; &nbsp;  &nbsp;-> View Analytics based on Category \
+    &nbsp;  &nbsp; &nbsp;  &nbsp;-> Update Order Delivery Status 
+
+
 # Libraries Used - 
 1. [HTTP](https://pub.dev/packages/http)
 2. [Shared Preference](https://pub.dev/packages/shared_preferences)
