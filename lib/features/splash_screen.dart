@@ -18,7 +18,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Timer(const Duration(milliseconds: 1250), () {
-      Navigator.pushNamed(
+      Navigator.pushReplacementNamed(
         context,
         Provider.of<UserProvider>(context, listen: false).user.token.isNotEmpty
             ? Provider.of<UserProvider>(context, listen: false).user.type == "user"
