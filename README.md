@@ -1,4 +1,6 @@
 # Amazon Clone using Flutter
+Thanks to (https://github.com/RivaanRanawat)[Rivaan Ranawat]. I followed his tutorial to build this project
+
 This app is the clone of a famous E-Commerce application i.e. Amazon. It consists of an Admin Panel and a User Panel. The Backend is build on top of ExpressJS and MongoDB, and the Frontend is build using Flutter. It consists of all the functionalities of Amazon Ecommerce Application. It also has Google Pay Integration. Screenshots of all the pages are listed below...
 
   <p><br></p>
